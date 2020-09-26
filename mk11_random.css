@@ -61,6 +61,6 @@ img {
 
 @font-face {
     font-family: 'sevenelevenserifregular';
-    src: url('sevenelevenserif.woff') format('woff');
+    src: url('SevenElevenSerif.otf') format('opentype');
     font-weight: bold;
 }
