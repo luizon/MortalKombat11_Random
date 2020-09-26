@@ -44,6 +44,7 @@ var randomize = () => {
     h1_character = document.createElement("h1");
     h1_character.innerHTML = "<i>Press the button</i>";
     btn = document.createElement("button");
+    btn.innerHTML = "randomize";
     btn.onclick = randomize;
 
     document.body.append(h1_character);
