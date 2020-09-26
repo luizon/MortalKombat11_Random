@@ -8,17 +8,18 @@ body {
 }
 
 h1 {
+  margin: auto;
   color: #DA0;
   font-size: 7em;
   text-align: center;
 }
 
 button {
+  margin: auto;
   font-size: 5em;
   text-align: center;
   background: #666;
   color: #DDD;
-  margin: auto;
   min-width: 200px;
 }
 
@@ -53,11 +54,6 @@ img {
   align-items: center;
   height: 100vh;
 }
-.center-horizontally {
-  display: flex;
-  align-items: center;
-}
-
 
 @keyframes incoming_thumbnail {
   0% {
