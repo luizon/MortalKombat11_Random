@@ -42,6 +42,17 @@ var randomize = () => {
     h1_character.innerHTML = character[index];
     img_thumbnail.alt = character[index] + " thumbnail.";
     img_thumbnail.src = root + index + ".png";
+
+    img_thumbnail.animate([
+      { // from
+        top: "50px",
+        opacity: 0,
+      },
+      { // to
+        top: "0px",
+        opacity: 1,
+      },
+    ], 500);
 };
 
 ;(function() {
