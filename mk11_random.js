@@ -34,14 +34,19 @@ var character = ["ROBOCOP",
                 "SINDEL"];
 var h1_character;
 var btn;
+var img_thumbnail;
+var root = "https://raw.githubusercontent.com/luizon/MortalKombat11_Random/master/"
 
 var randomize = () => {
     let index = Math.floor(Math.random()*character.length);
     h1_character.innerHTML = character[index];
+    img_thumbnail.alt = character[index] + " thumbnail.";
+    img_thumbnail.src = root + index + ".png";
 };
 
 ;(function() {
     h1_character = document.getElementById("h1_character");
     btn = document.getElementById("btn_randomize");
+    img_thumbnail = document.getElementById("img_thumbnail");
     btn.onclick = randomize;
 })();
