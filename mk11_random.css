@@ -55,6 +55,13 @@ img {
   height: 100vh;
 }
 
+.center-horizontally {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 @keyframes incoming_thumbnail {
   0% {
     top:50px;
