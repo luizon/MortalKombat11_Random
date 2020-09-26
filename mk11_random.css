@@ -26,8 +26,6 @@ button {
 img {
   margin: auto;
   position: relative;
-  animation: incoming_thumbnail;
-  animation-duration: 1s;
 }
 
 @media (max-width: 992px) {
@@ -59,16 +57,4 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-
-@keyframes incoming_thumbnail {
-  0% {
-    top:50px;
-    opacity: 0;
-  }
-  100% {
-    top:0px;
-    opacity: 1;
-  }
 }
