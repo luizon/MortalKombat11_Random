@@ -58,3 +58,9 @@ img {
   justify-content: center;
   align-items: center;
 }
+
+@font-face {
+    font-family: 'sevenelevenserifregular';
+    src: url('sevenelevenserif.woff') format('woff');
+    font-weight: bold;
+}
