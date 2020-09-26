@@ -20,6 +20,8 @@ btn {
     text-align: center;
     background: #666;
     color: #DDD;
+    margin: auto;
+    min-width: 200px;
 }
 
 @media (max-width: 992px) {
