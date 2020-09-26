@@ -36,6 +36,11 @@ var h1_character;
 var btn;
 var img_thumbnail;
 var root = "https://raw.githubusercontent.com/luizon/MortalKombat11_Random/master/"
+var incoming_thumbnail = {
+  top: ["50px", "0px"],
+  opacity: [0, 1],
+  easing: 'ease',
+};
 
 var randomize = () => {
     let index = Math.floor(Math.random()*character.length);
@@ -43,16 +48,7 @@ var randomize = () => {
     img_thumbnail.alt = character[index] + " thumbnail.";
     img_thumbnail.src = root + index + ".png";
 
-    img_thumbnail.animate([
-      { // from
-        top: "50px",
-        opacity: 0,
-      },
-      { // to
-        top: "0px",
-        opacity: 1,
-      },
-    ], 500);
+    img_thumbnail.animate(incoming_thumbnail, 1000);
 };
 
 ;(function() {
@@ -60,4 +56,6 @@ var randomize = () => {
     btn = document.getElementById("btn_randomize");
     img_thumbnail = document.getElementById("img_thumbnail");
     btn.onclick = randomize;
+  
+    img_thumbnail.animate(incoming_thumbnail, 1000);
 })();
