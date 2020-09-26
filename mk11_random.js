@@ -41,12 +41,7 @@ var randomize = () => {
 };
 
 ;(function() {
-    h1_character = document.createElement("h1");
-    h1_character.innerHTML = "<i>Press the button</i>";
-    btn = document.createElement("button");
-    btn.innerHTML = "randomize";
+    h1_character = document.getElementById("h1_character");
+    btn = document.getElementById("btn_randomize");
     btn.onclick = randomize;
-
-    document.body.append(h1_character);
-    document.body.append(btn);
 })();
