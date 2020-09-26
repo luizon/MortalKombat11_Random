@@ -15,7 +15,7 @@ h1 {
     text-align: center;
 }
 
-btn {
+button {
     font-size: 5em;
     text-align: center;
     background: #666;
@@ -28,7 +28,7 @@ btn {
     h1 {
         font-size: 5em;
     }
-    btn {
+    button {
         font-size: 4em;
     }
 }
@@ -37,7 +37,17 @@ btn {
     h1 {
         font-size: 3em;
     }
-    btn {
-        font-size: 4em;
+    button {
+        font-size: 2em;
     }
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.btn {
+  	display: flex;
+	align-items: center;
 }
