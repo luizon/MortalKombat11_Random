@@ -37,7 +37,12 @@ var btn;
 var img_thumbnail;
 var root = "https://raw.githubusercontent.com/luizon/MortalKombat11_Random/master/"
 var incoming_thumbnail = {
-  top: ["50px", "0px"],
+  top: ["-50px", "0px"],
+  opacity: [0, 1],
+  easing: 'ease',
+};
+var incoming_character_name = {
+  top: ["30px", "0px"],
   opacity: [0, 1],
   easing: 'ease',
 };
@@ -49,6 +54,7 @@ var randomize = () => {
     img_thumbnail.src = root + index + ".png";
 
     img_thumbnail.animate(incoming_thumbnail, 1000);
+    h1_character.animate(incoming_character_name, 1000);
 };
 
 ;(function() {
