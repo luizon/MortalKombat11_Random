@@ -58,11 +58,21 @@ var randomize = () => {
     h1_character.animate(incoming_character_name, 1000);
 };
 
+function loadImages() {
+    for(let i=0; i<character.length; i++) {
+        var img_tmp;
+        img_tmp = document.createElement("img");
+        img_tmp.src = root + i + ".png";
+    }
+}
+
 ;(function() {
     h1_character = document.getElementById("h1_character");
     btn = document.getElementById("btn_randomize");
     img_thumbnail = document.getElementById("img_thumbnail");
     btn.onclick = randomize;
-  
+    
+    loadImages();
+    
     img_thumbnail.animate(incoming_thumbnail, 1000);
 })();
