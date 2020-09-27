@@ -19,12 +19,27 @@ h1 {
 
 button {
   margin: auto;
+  border: none;
   font-size: 5em;
   text-align: center;
   background: #202020;
   color: #999;
   min-width: 200px;
   transition-duration: 500ms;
+  animation: buttonAppears;
+  animation-duration: 1000ms;
+}
+
+@keyframes buttonAppears {
+  0%   {
+    opacity: 0;
+  }
+  25%  {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 button:focus {
