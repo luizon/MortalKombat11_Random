@@ -27,11 +27,21 @@ button {
   transition-duration: 500ms;
 }
 
-button:hover, button:active {
+button:focus {
+  color: #BBB;
+  background: #8E7631;
+}
+
+button:hover {
   color: #DDD;
   background: #AE9651;
 }
 
+button:active {
+  color: #EEE;
+  background: #CFB873;
+  transition-duration: 150ms;
+}
 
 img {
   margin: auto;

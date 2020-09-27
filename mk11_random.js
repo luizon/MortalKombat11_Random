@@ -53,10 +53,14 @@ var randomize = () => {
     img_thumbnail.alt = character[index] + " thumbnail.";
     img_thumbnail.src = root + index + ".png";
     img_thumbnail.height = 216;
+    
+    animate();
+};
 
+function animate() {
     img_thumbnail.animate(incoming_thumbnail, 1000);
     h1_character.animate(incoming_character_name, 1000);
-};
+}
 
 function loadImages() {
     for(let i=0; i<character.length; i++) {
@@ -74,5 +78,5 @@ function loadImages() {
     
     loadImages();
     
-    img_thumbnail.animate(incoming_thumbnail, 1000);
+    animate();
 })();
