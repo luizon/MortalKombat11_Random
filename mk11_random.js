@@ -52,6 +52,7 @@ var randomize = () => {
     h1_character.innerHTML = character[index];
     img_thumbnail.alt = character[index] + " thumbnail.";
     img_thumbnail.src = root + index + ".png";
+    img_thumbnail.height = 216;
 
     img_thumbnail.animate(incoming_thumbnail, 1000);
     h1_character.animate(incoming_character_name, 1000);
