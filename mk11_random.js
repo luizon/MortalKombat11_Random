@@ -35,7 +35,7 @@ var character = ["ROBOCOP",
 var h1_character;
 var btn;
 var img_thumbnail;
-var root = "https://raw.githubusercontent.com/luizon/MortalKombat11_Random/master/"
+var root = "https://raw.githubusercontent.com/luizon/MortalKombat11_Random/master/thumbnails/"
 var incoming_thumbnail = {
   top: ["-50px", "0px"],
   opacity: [0, 1],
